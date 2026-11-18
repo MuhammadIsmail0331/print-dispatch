@@ -1,0 +1,17 @@
+name: Check handoff
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: python --version
+      - run: python -m unittest discover -s tests -v
+      - run: python examples/make_example.py
+      - run: python print_dispatch.py check examples/job.json --html test-report.html
+      - run: python print_dispatch.py pack examples/job.json -o test-pack.zip

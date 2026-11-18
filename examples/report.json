@@ -1,0 +1,77 @@
+{
+  "tool": "Print Dispatch",
+  "version": "0.1.0",
+  "title": "Calibration blocks \u2014 first print",
+  "units": "mm",
+  "printer_mm": [
+    220,
+    220,
+    250
+  ],
+  "parts": [
+    {
+      "file": "calibration-pad.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "notes": "Flat face down. Measure X/Y before approving the next batch.",
+      "triangles": 12,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          40.0,
+          20.0,
+          5.0
+        ]
+      ],
+      "size_mm": [
+        40.0,
+        20.0,
+        5.0
+      ],
+      "signed_volume_mm3": 4000.0,
+      "bad_edge_count": 0,
+      "inconsistent_edge_count": 0,
+      "degenerate_triangles": 0,
+      "sha256": "5fe78fcfa88d9d43a2077046d012a1d0137be3c30e18415912eab8b4cf3791b6",
+      "errors": []
+    },
+    {
+      "file": "clearance-block.stl",
+      "quantity": 2,
+      "material": "PETG",
+      "notes": "10 mm tall as supplied. Keep scale at 100%.",
+      "triangles": 12,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          12.0,
+          12.0,
+          10.0
+        ]
+      ],
+      "size_mm": [
+        12.0,
+        12.0,
+        10.0
+      ],
+      "signed_volume_mm3": 1440.0,
+      "bad_edge_count": 0,
+      "inconsistent_edge_count": 0,
+      "degenerate_triangles": 0,
+      "sha256": "69f234c2b4f358e33c42bc4ab2c70bcfda66178011897eb5dea3d300034d2e0b",
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "notice": "Checks cover digital handoff only, not strength, tolerances, support, material suitability or physical fit. STL units are declared by the sender, not inferred from the file.",
+  "total_pieces": 3,
+  "status": "checks_passed"
+}
