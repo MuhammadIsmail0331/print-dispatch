@@ -1,0 +1,9 @@
+{
+  "title": "Calibration blocks — first print",
+  "units": "mm",
+  "printer_mm": [220, 220, 250],
+  "parts": [
+    {"file": "calibration-pad.stl", "quantity": 1, "material": "PETG", "notes": "Flat face down. Measure X/Y before approving the next batch."},
+    {"file": "clearance-block.stl", "quantity": 2, "material": "PETG", "notes": "10 mm tall as supplied. Keep scale at 100%."}
+  ]
+}
